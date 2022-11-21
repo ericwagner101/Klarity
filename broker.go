@@ -14,11 +14,6 @@ func createBitcask() *bitcask.Bitcask {
 	return db
 }
 
-func cleanup() error {
-	fmt.Println("Running cleanup...")
-	return fmt.Errorf("error on cleanup")
-}
-
 func main() {
 	db := createBitcask()
 	defer db.Close()
